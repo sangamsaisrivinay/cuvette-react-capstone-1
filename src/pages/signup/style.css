@@ -1,0 +1,9 @@
+.signup-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    /* background-color: red; */
+    flex-wrap: wrap;
+}

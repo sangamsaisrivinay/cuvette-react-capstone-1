@@ -1,0 +1,105 @@
+.form-container{
+    background-color: black;
+    height:100%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+@media (max-width: 400px) {
+    .form-container {
+        width: 100%;
+    }
+}
+
+
+/* Media query for medium screens */
+@media (min-width: 401px) and (max-width: 900px) {
+    .form-container {
+        width: 60%;
+    }
+}
+
+/* Media query for large screens */
+@media (min-width: 901px) {
+    .form-container {
+        width: 50%;
+    }
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+}
+
+.header-container{
+    height: 15%;
+    width:100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.header-container h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    color: #72DB73;
+    margin: 0;
+}
+
+.header-container p{
+    font-size: 0.8rem;
+}
+
+.main-container{
+    /* background-color: blue; */
+    height: 65%
+}
+
+.main-container input[type="text"], .main-container input[type="email"], .main-container input[type="password"]{
+    width: 70%;
+    height: 10%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 1rem;
+    background-color: #292929;
+    color: #fff;
+}
+
+
+
+.main-container button{
+    width: 70%;
+    height: 10%;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+    font-size: 1rem;
+    background-color: #72DB73;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+.footer-container{
+    height: 15%;
+    padding:15px;
+}
+
+.footer-container p{
+    font-size: 0.8rem;
+    text-align:center;
+}
+
+.footer-container p span{
+    color: #72DB73;
+}
