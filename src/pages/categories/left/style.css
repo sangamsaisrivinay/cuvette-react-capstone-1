@@ -1,0 +1,81 @@
+.categories-left-container{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    color:#fff;
+    padding: 5%;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+.categories-left-container #header{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Single Day', cursive;
+    color: #72DB73;
+}
+
+.categories-left-container #caption{
+    font-size: 2rem;
+    max-width: 90%;
+    /* background-color: red; */
+}
+
+
+@media (max-width: 400px) {
+    .categories-left-container{
+        width: 100%;
+    }
+}
+
+
+/* Media query for medium screens */
+@media (min-width: 401px) {
+    .categories-left-container {
+        width: 40%;
+    }
+}
+
+
+.chips-container{
+    /* background-color: blue; */
+    min-height: 60%;
+    width: 90%;
+    position: relative;
+}
+
+.chips-container #alert{
+    color:red;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom:10px;
+    left: 10px;
+}
+
+.chips{
+    /* background-color: red; */
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    padding: 5% 0px;
+    flex-wrap: wrap;
+}
+
+.chip{
+    background-color: green;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding:5px;
+    border-radius: 5px;
+    min-width:30%;
+    display: flex;
+    justify-content: space-between;
+}
