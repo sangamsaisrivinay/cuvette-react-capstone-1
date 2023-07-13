@@ -5,19 +5,12 @@ import Categories from './pages/categories'
 
 function App() {
   return (
-    // <Router>
-    //   <Routes>
-    //     <Route path='/' element={<Signup/>}/>
-    //     <Route path='/categories' element={<Categories/>}/>
-    //   </Routes>
-    // </Router>
-      //  <Signup/> 
-
-      // <Categories/>
-      <div>
-        hello
-      </div>
-
+    <Router>
+      <Routes>
+        <Route path='/' element={<Signup/>}/>
+        <Route path='/categories' element={<Categories/>}/>
+      </Routes>
+    </Router> 
   );
 }
 
