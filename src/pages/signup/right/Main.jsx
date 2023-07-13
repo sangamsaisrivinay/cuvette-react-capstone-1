@@ -135,10 +135,11 @@ const Main = () => {
         </label>
       </div>
       {   
-        nameFlag && userNameFlag && emailFlag && mobileFlag &&(<button type="submit">
-          <Link to='/categories' style={{textDecoration: 'none',color: '#fff', width:'100%', height:'100%'}}>sign up</Link>
-          {/* signup */}
-        </button>)
+        nameFlag && userNameFlag && emailFlag && mobileFlag &&(
+          <Link to='/categories' style={{textDecoration: 'none',color: '#fff', width:'100%', height:'100%'}}>
+            <button type="submit">sign up</button>
+          </Link>
+        )
       }
     </form>
   );
