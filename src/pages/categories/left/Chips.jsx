@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTriangleExclamation, faTimes } from '@fortawesome/free-solid-svg-icons'
 const Chips = ({categories, count}) => {
   // console.log("categories",categories, "count", count)
-  console.log(typeof categories)
+  // console.log(typeof categories)
     const items=['romance','fiction','action','romance','fiction','action','romance','fiction','action']
   return (
     <div className="chips-container">

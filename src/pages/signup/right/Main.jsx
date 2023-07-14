@@ -55,14 +55,17 @@ const Main = () => {
     const regex = /^[0-9]{10}$/;
     const isValid = regex.test(e.target.value);
     setMobileFlag(isValid);
+    // console.log(name)
   }
+
 
 
   const handleSubmit=(e)=>{
     e.preventDefault();
+    console.log("form submitted");
     const data = {name, userName, email, mobile, shareData };
-    console.log(data);
-    localStorage.setItem('data', JSON.stringify(data));
+    console.log("userdata",data);
+    localStorage.setItem('user-data', JSON.stringify(data));
   }
 
   //styles
@@ -83,7 +86,7 @@ const Main = () => {
   
 
   return (
-    <form className="main-container sub-container" method="POST" onSubmit={handleSubmit}>
+    <form className="main-container sub-container" >
       {/* name */}
       
       <input
@@ -135,10 +138,12 @@ const Main = () => {
         </label>
       </div>
       {   
-        nameFlag && userNameFlag && emailFlag && mobileFlag &&(<button type="submit">
+        nameFlag && userNameFlag && emailFlag && mobileFlag &&(<button type="submit" onClick={handleSubmit}>
           <Link to='/categories' style={{textDecoration: 'none',color: '#fff', width:'100%', height:'100%'}}>sign up</Link>   
-        </button>)
+        </button>
+        )
       }
+      <p>name: {name}, username: {userName}, email:{email}, mobile:{mobile}</p>
     </form>
   );
 };

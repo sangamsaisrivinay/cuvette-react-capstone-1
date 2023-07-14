@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './style.css'
 import data from './data'
 import Card from './Card'
@@ -23,19 +24,19 @@ const Index = () => {
     }
   }
 
-  const handleSubmit=()=>{
-    console.log('clicked')
-    const existing= localStorage.getItem("data")
+  const handleSubmit=(e)=>{
+    // console.log('clicked')
+    e.preventDefault()
     const dataToAdd={
       "count": selectedCategoryCount,
       "categories":selectedCatgories
     }
-    const newData=JSON.stringify({...JSON.parse(existing),dataToAdd})
-    localStorage.setItem("data",newData)
+    const newData=JSON.stringify(dataToAdd)
+    localStorage.setItem("category-data",newData)
   }
 
   return (
-    <div className="categories-right-container" onSubmit={handleSubmit}>
+    <div className="categories-right-container" >
       {data.map((item, index) => (
         <Card
         key={index}
@@ -66,7 +67,9 @@ const Index = () => {
         }
         id='submit-categories'
       >
+        <Link to='/home'>
         Next {">"}
+        </Link>
       </button>
 
 

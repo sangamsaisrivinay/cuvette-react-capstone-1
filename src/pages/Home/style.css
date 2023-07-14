@@ -1,0 +1,20 @@
+.home-container{
+    height: 100vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 30% 40%;
+    grid-gap:20px;
+}
+
+@media (max-width: 767px) {
+    .home-container {
+      grid-template-columns: 1fr; /* Switch to a single column layout */
+      grid-template-rows: auto; /* Let the rows adjust automatically based on content */
+    }
+  
+    .card {
+      grid-area: auto; /* Reset the grid area */
+    }
+  }
+  
