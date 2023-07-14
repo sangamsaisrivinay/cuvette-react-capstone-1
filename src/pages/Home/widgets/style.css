@@ -114,8 +114,18 @@
 
 .news-card{
     grid-area: 1/3/4/4;
-    background: gray;
+    /* background: #fff; */
+    background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    /* padding:0; */
+    color:black;
 }
+
+
 
 .notes-card{
     grid-area: 1/2/3/3;
