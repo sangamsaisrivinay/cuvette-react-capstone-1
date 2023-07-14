@@ -1,4 +1,20 @@
-body{
+body {
     background-color: black;
-    color:white
+    color: white
 }
+
+ .thinScrollBar::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: transparent;
+}
+
+/* .hiddenScrollBar::-webkit-scrollbar-track {
+    background-color: #e5e5e5; 
+  } */
+
+.thinScrollBar::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    /* Adjust as needed */
+   border-radius: 0.1em;
+    /* Adjust as needed */
+} 
