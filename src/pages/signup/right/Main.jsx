@@ -143,7 +143,7 @@ const Main = () => {
         </button>
         )
       }
-      <p>name: {name}, username: {userName}, email:{email}, mobile:{mobile}</p>
+      {/* <p>name: {name}, username: {userName}, email:{email}, mobile:{mobile}</p> */}
     </form>
   );
 };

@@ -3,6 +3,7 @@ import './App.css';
 import Signup from './pages/signup'
 import Categories from './pages/categories'
 import Home from './pages/Home'
+import Test from './test'
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
         <Route path='/home' element={<Home/>}/>
       </Routes>
     </Router> 
-    
+    // <Test/>
   );
 }
 
