@@ -5,6 +5,8 @@ import Categories from './pages/categories'
 import Home from './pages/Home'
 // import Test from './test'
 // import ModalTest from './pages/Home/widgets/notes/ModalTest';
+import TimerCard from './pages/Home/widgets/test/TimerCard';
+
 
 function App() {
 
@@ -20,7 +22,7 @@ function App() {
     </Router> 
       // <Test/>
     // <div>
-    //   <ModalTest/>
+    //   <TimerCard/>
     // </div>
   );
 }
