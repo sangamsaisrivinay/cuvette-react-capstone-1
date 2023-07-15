@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const DisplayNotes = () => {
 //   console.log(localStorage.getItem('notes'))
-let notes = JSON.parse(localStorage.getItem('notes'));
+let notes =JSON.parse(localStorage.getItem('notes')) || ['sample note'];
 // console.log(notes)
   return (
     <div style={{  textAlign:'justify', padding:'5px' }}>
