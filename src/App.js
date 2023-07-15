@@ -4,7 +4,7 @@ import Signup from './pages/signup'
 import Categories from './pages/categories'
 import Home from './pages/Home'
 import Browse from './pages/Browse'
-
+import MovieFetch from './MovieFetch';
 function App() {
 
 
@@ -18,7 +18,7 @@ function App() {
         <Route path='/browse' element={<Browse/>}/>
       </Routes>
     </Router> 
-     
+    //  <MovieFetch/>
   );
 }
 
