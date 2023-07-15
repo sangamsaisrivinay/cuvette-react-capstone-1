@@ -29,7 +29,7 @@ const prevArticle = () => {
 
   return (
     <div className="card news-card" style={{ position: "relative" }}>
-      <div style={{}}>
+       <div style={{}}>
         {news.current[articleNumber].urlToImage ? (
           <img
             src={news.current[articleNumber].urlToImage}
@@ -116,7 +116,7 @@ const prevArticle = () => {
         >
           next
         </button>
-      </div>
+      </div> 
     </div>
   );
 }
