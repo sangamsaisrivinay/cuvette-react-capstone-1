@@ -29,7 +29,7 @@ const prevArticle = () => {
 
   return (
     <div className="card news-card" style={{ position: "relative" }}>
-       <div style={{}}>
+      {/* <div style={{}}>
         {news.current[articleNumber].urlToImage ? (
           <img
             src={news.current[articleNumber].urlToImage}
@@ -116,7 +116,91 @@ const prevArticle = () => {
         >
           next
         </button>
-      </div> 
+      </div>  */}
+      <div style={{}}>
+        <img
+          src="https://cdn.pixabay.com/photo/2015/02/15/09/33/news-636978_1280.jpg"
+          alt="buffer"
+          style={{
+            width: "100%",
+            objectFit: "contain",
+            borderRadius: "10px",
+          }}
+        />
+
+        <div
+          style={{
+            padding: "10px",
+            margin: "10px 0",
+          }}
+        >
+          <p
+            style={{
+              textAlign: "center",
+              fontSize: "1.2em",
+              fontWeight: "bold",
+            }}
+          >
+            Can banks push Bitcoin to clean up its act?
+          </p>
+          <br />
+          <p style={{ fontSize: "0.8rem", textAlign: "center" }}>
+            published on: 2023-07-11
+          </p>
+        </div>
+        <p style={{ textAlign: "justify" }}>
+          Can banks push Bitcoin to clean up its act?\r\nCan banks push Bitcoin
+          to clean up its act?\r\n / Banks and asset managers have a big stake
+          in Bitcoin, so Greenpeace wants them to crack down on the crypto…
+          [+4372 chars]{" "}
+          <a
+            href="https://www.theverge.com/2023/7/11/23778688/bitcoin-energy-emissions-climate-change-banks-asset-managers-greenpeace"
+            style={{ textDecoration: "none" }}
+          >
+            read full article
+          </a>
+        </p>
+        <br />
+        <br />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          width: "100%",
+          justifyContent: "space-between",
+          padding: "0 10px",
+          // marginTop: "100px",
+          position: "absolute",
+          bottom: "0",
+          right: "0",
+          backgroundColor: "rgba(0,0,0,0.1)",
+        }}
+      >
+        <button
+          onClick={prevArticle}
+          style={{
+            padding: "10px",
+            border: "none",
+            outline: "none",
+            backgroundColor: "rgba(0,0,0,0)",
+            cursor: "pointer",
+          }}
+        >
+          prev
+        </button>
+        <button
+          onClick={nextArticle}
+          style={{
+            padding: "10px",
+            border: "none",
+            outline: "none",
+            backgroundColor: "rgba(0,0,0,0)",
+            cursor: "pointer",
+          }}
+        >
+          next
+        </button>
+      </div>
     </div>
   );
 }
