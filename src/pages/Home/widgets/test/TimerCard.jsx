@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Timer from "./Timer";
-
+import './Blink.css'
 import { BsFillPlayFill, BsPauseFill, BsStopFill } from "react-icons/bs";
 
 document.body.style.background = "#282c34";
@@ -89,10 +89,13 @@ export default function CountdownTimer() {
     setHours(e.target.value);
   };
   return (
-    <div style={{width:'100%',display:'flex', flexDirection:'column', justifyContent:'center'}}>
-      {showEndScreen.show && (
+    <div className={showEndScreen.show?"blink":'abc'}
+     style={showEndScreen.show ?
+      {background:'red'}:
+    {width:'100%',display:'flex', flexDirection:'column', justifyContent:'center', background:'rgba(0,0,0,0)'  }}>
+      {/* {showEndScreen.show && (
         <h1 className="title  text-light">{showEndScreen.message}</h1>
-      )}
+      )} */}
       <Timer
         milliseconds={milliseconds}
         seconds={seconds}

@@ -1,0 +1,12 @@
+.browse-container{
+    /* background-color: black; */
+    background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:5% ;
+    /* border:100px solid red;
+    margin:100px; */
+}

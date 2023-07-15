@@ -5,6 +5,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 40vh 20vh 40vh;
     grid-gap:20px;
+    position: relative;
 }
 
 @media (max-width: 767px) {
