@@ -1,3 +1,6 @@
+<img width="960" alt="image" src="https://github.com/sangamsaisrivinay/cuvette-react-capstone-1/assets/68855472/a82337be-1842-45c9-9870-941fd13a3771">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
